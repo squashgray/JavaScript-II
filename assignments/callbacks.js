@@ -54,12 +54,22 @@ const test2 = last(items, items => `the last item is ${items}!`);
 console.log(test2);
 
 function sumNums(x, y, cb) {
+  return cb(x, y);
   // sumNums adds two numbers (x, y) and passes the result to the callback.
 }
+const add = (x, y) =>{
+  return x + y; 
+}
+console.log(sumNums(3, 3, add));
 
 function multiplyNums(x, y, cb) {
+   return cb(x, y);
   // multiplyNums multiplies two numbers and passes the result to the callback.
 }
+const multiply = (x, y) =>{
+  return x * y; 
+}
+console.log(multiplyNums(4, 5, multiply));
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
