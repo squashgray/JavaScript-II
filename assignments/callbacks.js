@@ -50,7 +50,7 @@ function last(arr, cb) {
   return cb(arr[arr.length-1]);
   // last passes the last item of the array into the callback.
 }
-const test2 = last(items, items => `the last item is ${items}!`);
+const test2 = last(items, item2 => `the last item is ${item2}!`);
 console.log(test2);
 
 function sumNums(x, y, cb) {
