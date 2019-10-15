@@ -109,12 +109,12 @@ console.log(runnersEmailList);
 let thankYou = [];
 
 runners.forEach(function(items){
-  if (runners.donation > 100){
-  return thankYou.map(`${items.first_name} ${items.last_name} THANK YOU FOR YOUR GENEROUS DONATION!`);
+  if (items.donation > 100){
+    thankYou.push(`${items.first_name} ${items.last_name} THANK YOU FOR YOUR GENEROUS DONATION!`);
   }
- 
 });
 console.log(thankYou);
+
 
 
 // Problem 3
