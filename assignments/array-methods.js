@@ -104,7 +104,7 @@ runners.forEach(function(items){
 console.log(runnersEmailList);
 
 // Problem 2
-// We want to send special thank you nots to all donations over $100, we need a list of the first/last names of everyone who donated over $100//
+// We want to send a special thank you out to all donations over $100, we need a list of the first/last names of everyone who donated over $100//
 
 let thankYou = [];
 
